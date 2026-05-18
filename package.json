@@ -1,0 +1,27 @@
+{
+    "name": "vuejs_laravel",
+    "version": "1.0.0",
+    "author": "Kashif Bhatti",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@shufo/prettier-plugin-blade": "^1.14.1",
+        "@vitejs/plugin-vue": "^5.2.1",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "click-outside-vue3": "^4.0.1",
+        "concurrently": "^9.0.1",
+        "prettier": "3.4.2",
+        "sass": "^1.66.1",
+        "vue": "^3.5.13"
+    },
+    "dependencies": {
+        "laravel-vite-plugin": "^1.0",
+        "postcss": "^8.4.47",
+        "vite": "^5.0"
+    }
+}
