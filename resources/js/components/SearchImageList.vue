@@ -108,6 +108,10 @@
                 </div>
             </div>
         </div>
+        <div>
+            <h3>VueJS AJAX search by Kashif Bhatti</h3>
+            <p>Search for computer parts such as 'iPad', 'Macbook', 'monitor', 'SSD' etc.</p>
+        </div>
     </div>
 </template>
 <script>

@@ -7,4 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/search', SearchController::class);
+Route::post('/search', SearchController::class)
+    ->middleware('throttle:60,1')
+    ->name('search');
