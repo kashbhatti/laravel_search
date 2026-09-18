@@ -216,6 +216,7 @@ export default {
         },
         hide: function () {
             this.isActive = false;
+            this.loading = false;
         },
         toggleDataMode: function (mode) {
             $('.search__wrapper').attr('data-mode', mode);
