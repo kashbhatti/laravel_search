@@ -13,11 +13,11 @@
         <div class="search__copy">
             <span
                 class="search__product_name"
-                v-text="item_name"
+                v-html="item_name"
             ></span>
             <span
                 class="search__product_desc"
-                v-text="item_desc"
+                v-html="item_desc"
             ></span>
         </div>
         <div class="search__product-card"
