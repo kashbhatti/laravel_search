@@ -12,7 +12,7 @@ class SearchRepository implements SearchInterface
     public function search(SearchDto $dto): array
     {
         $dataQuery = Product::query()
-            ->whereRaw('LOWER(name) LIKE :query', ['query' => '%'.$dto->query.'%'])
+            ->where('name', 'LIKE', '%' . $dto->query . '%')
             ->offset($dto->offSet)
             ->limit(12);
 
@@ -24,6 +24,8 @@ class SearchRepository implements SearchInterface
             $dataQuery->orderBy('id');
         }
 
-        return $dataQuery->selectRaw('id, name, image, price, name as description')->get()->toArray();
+        return $dataQuery->select('id', 'name', 'image', 'price', 'name as description')
+            ->get()
+            ->toArray();
     }
 }
